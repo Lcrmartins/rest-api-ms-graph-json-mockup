@@ -1,7 +1,7 @@
 {
     "findMeetingTime": [
     {
-        "response": 1,
+        "id": 1,
         "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.meetingTimeSuggestionsResult",
         "emptySuggestionsReason": "",
         "meetingTimeSuggestions": [
@@ -133,7 +133,7 @@
         ]
     }, 
     {
-        "response": 2,
+        "id": 2,
         "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.meetingTimeSuggestionsResult",
         "emptySuggestionsReason": "",
         "meetingTimeSuggestions": [
@@ -265,7 +265,7 @@
         ]
     },
     {
-        "response": 3,
+        "id": 3,
         "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.meetingTimeSuggestionsResult",
         "emptySuggestionsReason": "",
         "meetingTimeSuggestions": [
@@ -397,7 +397,7 @@
         ]
     },
     {
-        "response": 4,
+        "id": 4,
         "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.meetingTimeSuggestionsResult",
         "emptySuggestionsReason": "There is not empty slots because all slots are occupied",
         "meetingTimeSuggestions": []
