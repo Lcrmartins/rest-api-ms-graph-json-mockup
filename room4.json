@@ -1,0 +1,5 @@
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.meetingTimeSuggestionsResult",
+    "emptySuggestionsReason": "There is not empty slots because all slots are occupied",
+    "meetingTimeSuggestions": []
+}

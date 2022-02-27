@@ -1,0 +1,306 @@
+[
+    {
+        "id": "AAMkADQ0",
+        "subject": "Let's Test Room 2",
+        "start": {
+            "dateTime": "2022-03-03T19:00:00.0000000",
+            "timeZone": "UTC"
+        },
+        "end": {
+            "dateTime": "2022-03-03T20:00:00.0000000",
+            "timeZone": "UTC"
+        },
+        "location": {
+            "displayName": "room 2",
+            "locationType": "default",
+            "uniqueId": "room 2",
+            "uniqueIdType": "private"
+        },
+        "attendees": [
+            {
+                "type": "required",
+                "status": {
+                    "response": "accepted",
+                    "time": "2022-02-25T16:21:48.5522606Z"
+                },
+                "emailAddress": {
+                    "name": "Room 2",
+                    "address": "room2@seethisapp.onmicrosoft.com"
+                }
+            }
+        ],
+        "organizer": {
+            "emailAddress": {
+                "name": "Luis Martins",
+                "address": "luis.martins@seethisapp.onmicrosoft.com"
+            }
+        },
+        "createdDateTime": "2022-02-25T16:21:48.5522606Z"
+    },
+    {
+        "id": "AAMkADQ1",
+        "subject": "Let's Test Room 3",
+        "start": {
+            "dateTime": "2022-03-03T14:00:00.0000000",
+            "timeZone": "UTC"
+        },
+        "end": {
+            "dateTime": "2022-03-03T16:00:00.0000000",
+            "timeZone": "UTC"
+        },
+        "location": {
+            "displayName": "room 3",
+            "locationType": "default",
+            "uniqueId": "062bfce8-c181-4b95-b10a-cc19c5b66daa",
+            "uniqueIdType": "locationStore"
+        },
+        "attendees": [
+            {
+                "type": "required",
+                "status": {
+                    "response": "none",
+                    "time": "0001-01-01T00:00:00Z"
+                },
+                "emailAddress": {
+                    "name": "Room 3",
+                    "address": "room3@seethisapp.onmicrosoft.com"
+                }
+            }
+        ],
+        "organizer": {
+            "emailAddress": {
+                "name": "Luis Martins",
+                "address": "luis.martins@seethisapp.onmicrosoft.com"
+            }
+        },
+        "createdDateTime": "2022-02-25T16:21:48.5522606Z"
+    },
+    {
+        "id": "AAMkADQ2",
+        "subject": "Let's Test",
+        "start": {
+            "dateTime": "2022-03-02T14:15:00.0000000",
+            "timeZone": "UTC"
+        },
+        "end": {
+            "dateTime": "2022-03-02T14:45:00.0000000",
+            "timeZone": "UTC"
+        },
+        "location": {
+            "displayName": "room 2",
+            "locationType": "default",
+            "uniqueId": "room 2",
+            "uniqueIdType": "private"
+        },
+        "attendees": [
+            {
+                "type": "required",
+                "status": {
+                    "response": "none",
+                    "time": "0001-01-01T00:00:00Z"
+                },
+                "emailAddress": {
+                    "name": "Room 2",
+                    "address": "room2@seethisapp.onmicrosoft.com"
+                }
+            }
+        ],
+        "organizer": {
+            "emailAddress": {
+                "name": "Luis Martins",
+                "address": "luis.martins@seethisapp.onmicrosoft.com"
+            }
+        },
+        "createdDateTime": "2022-02-25T16:21:48.5522606Z"
+    },
+    {
+        "id": "AAMkADQ3",
+        "subject": "Let's go for lunch",
+        "start": {
+            "dateTime": "2022-03-02T13:30:00.0000000",
+            "timeZone": "UTC"
+        },
+        "end": {
+            "dateTime": "2022-03-02T14:00:00.0000000",
+            "timeZone": "UTC"
+        },
+        "location": {
+            "displayName": "room 1",
+            "locationType": "default",
+            "uniqueId": "room 1",
+            "uniqueIdType": "private"
+        },
+        "attendees": [
+            {
+                "type": "required",
+                "status": {
+                    "response": "none",
+                    "time": "0001-01-01T00:00:00Z"
+                },
+                "emailAddress": {
+                    "name": "Room 1",
+                    "address": "room1@seethisapp.onmicrosoft.com"
+                }
+            }
+        ],
+        "organizer": {
+            "emailAddress": {
+                "name": "Luis Martins",
+                "address": "luis.martins@seethisapp.onmicrosoft.com"
+            }
+        },
+        "createdDateTime": "2022-02-25T16:21:48.5522606Z"
+    },
+    {
+        "id": "AAMkADQ4",
+        "subject": "Let's go for lunch",
+        "start": {
+            "dateTime": "2017-03-02T13:30:00.0000000",
+            "timeZone": "UTC"
+        },
+        "end": {
+            "dateTime": "2017-03-02T14:00:00.0000000",
+            "timeZone": "UTC"
+        },
+        "location": {
+            "displayName": "room 1",
+            "locationType": "default",
+            "uniqueId": "room 1",
+            "uniqueIdType": "private"
+        },
+        "attendees": [
+            {
+                "type": "required",
+                "status": {
+                    "response": "none",
+                    "time": "0001-01-01T00:00:00Z"
+                },
+                "emailAddress": {
+                    "name": "Room 1",
+                    "address": "room1@seethisapp.onmicrosoft.com"
+                }
+            }
+        ],
+        "organizer": {
+            "emailAddress": {
+                "name": "Luis Martins",
+                "address": "luis.martins@seethisapp.onmicrosoft.com"
+            }
+        },
+        "createdDateTime": "2022-02-25T16:21:48.5522606Z"
+    },
+    {
+        "id": "AAMkADQ5",
+        "subject": "Teste R1 outra vez",
+        "start": {
+            "dateTime": "2022-03-02T15:00:00.0000000",
+            "timeZone": "UTC"
+        },
+        "end": {
+            "dateTime": "2022-03-02T16:30:00.0000000",
+            "timeZone": "UTC"
+        },
+        "location": {
+            "displayName": "room 1",
+            "locationType": "default",
+            "uniqueId": "room 1",
+            "uniqueIdType": "private"
+        },
+        "attendees": [
+            {
+                "type": "required",
+                "status": {
+                    "response": "none",
+                    "time": "0001-01-01T00:00:00Z"
+                },
+                "emailAddress": {
+                    "name": "Room 1",
+                    "address": "room1@seethisapp.onmicrosoft.com"
+                }
+            }
+        ],
+        "organizer": {
+            "emailAddress": {
+                "name": "Luis Martins",
+                "address": "luis.martins@seethisapp.onmicrosoft.com"
+            }
+        },
+        "createdDateTime": "2022-02-25T16:21:48.5522606Z"
+    },
+    {
+        "id": "AAMkADQ6",
+        "subject": "Teste R1 de novo",
+        "start": {
+            "dateTime": "2022-03-02T17:00:00.0000000",
+            "timeZone": "UTC"
+        },
+        "end": {
+            "dateTime": "2022-03-02T20:30:00.0000000",
+            "timeZone": "UTC"
+        },
+        "location": {
+            "displayName": "room 1",
+            "locationType": "default",
+            "uniqueId": "room 1",
+            "uniqueIdType": "private"
+        },
+        "attendees": [
+            {
+                "type": "required",
+                "status": {
+                    "response": "none",
+                    "time": "0001-01-01T00:00:00Z"
+                },
+                "emailAddress": {
+                    "name": "Room 1",
+                    "address": "room1@seethisapp.onmicrosoft.com"
+                }
+            }
+        ],
+        "organizer": {
+            "emailAddress": {
+                "name": "Luis Martins",
+                "address": "luis.martins@seethisapp.onmicrosoft.com"
+            }
+        },
+        "createdDateTime": "2022-02-25T16:21:48.5522606Z"
+    },
+    {
+        "id": "AAMkADQ7",
+        "subject": "Teste R1",
+        "start": {
+            "dateTime": "2022-03-02T12:30:00.0000000",
+            "timeZone": "UTC"
+        },
+        "end": {
+            "dateTime": "2022-03-02T13:00:00.0000000",
+            "timeZone": "UTC"
+        },
+        "location": {
+            "displayName": "room 1",
+            "locationType": "default",
+            "uniqueId": "room 1",
+            "uniqueIdType": "private"
+        },
+        "attendees": [
+            {
+                "type": "required",
+                "status": {
+                    "response": "none",
+                    "time": "0001-01-01T00:00:00Z"
+                },
+                "emailAddress": {
+                    "name": "Room 1",
+                    "address": "room1@seethisapp.onmicrosoft.com"
+                }
+            }
+        ],
+        "organizer": {
+            "emailAddress": {
+                "name": "Luis Martins",
+                "address": "luis.martins@seethisapp.onmicrosoft.com"
+            }
+        },
+        "createdDateTime": "2022-02-25T16:21:48.5522606Z"
+    }
+]

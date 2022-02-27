@@ -1,0 +1,27 @@
+{
+    "subject": "Meeting subject Theme",
+    "body": {
+        "contentType": "HTML",
+        "content": "Call link: https://aka.ms/mmkv1b Submit a question: https://aka.ms/ybuw2i"
+    },
+    "start": {
+        "dateTime": "2018-09-04T08:00:00",
+        "timeZone": "Pacific Standard Time"
+    },
+    "end": {
+        "dateTime": "2018-09-04T09:00:00",
+        "timeZone": "Pacific Standard Time"
+    },
+    "location":{
+        "displayName":"Harry's Bar"
+    },
+    "attendees": [
+      {
+        "emailAddress": {
+          "address":"samanthab@contoso.onmicrosoft.com",
+          "name": "Samantha Booth"
+        },
+        "type": "required"
+      }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "rest-api-ms-graph-json-mockup",
+  "version": "1.0.0",
+  "description": "REST API MS Graph Json Mockup for Outlook Calendar",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.parli.com.br/lcrmartins/rest-api-ms-graph-json-mockup.git"
+  },
+  "keywords": [],
+  "author": "Luis Martins",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
