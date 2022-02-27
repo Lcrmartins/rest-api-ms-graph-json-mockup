@@ -1,0 +1,119 @@
+TASK ROOM BOOKING USING SOPHIE
+
+
+site : https://www.yammer.com/seethisapp.onmicrosoft.com/
+
+Users:
+Admin:
+luis.martins@seethisapp.onmicrosoft.com
+jent123!@#$
+
+
+TRY ONE - USING BOOKINGS AND ROOM AS STAFF AND SERVICES AS THE DURATION 
+
+
+Adding staff (Rooms)
+
+Room One
+R1
+Orange Dark
+Email: Yammer1@seethisapp.onmicrosoft.com
+No business hours
+Not to notify staff
+
+Room Two
+R2
+Orange lighter
+Email: Yammer2@seethisapp.onmicrosoft.com
+No business hours
+Not to notify staff
+
+Room Three
+R3
+Yellow light
+Email: Yammer3@seethisapp.onmicrosoft.com
+No business hours
+Not to notify staff
+
+Adding Services (Available Durations)
+
+Meeting 30
+Select Room for a 30 minutes meeting
+Our office address
+Duration 30 min
+Buffer 10 minutes
+No price
+No notes
+Let customers manage their appointment
+
+
+Meeting 60
+Select Room for a 60 minutes meeting
+Our office address
+Duration 60 min
+Buffer 10 minutes
+No price
+No notes
+Let customers manage their appointment
+
+Meeting 90
+Select Room for a 90 minutes meeting
+Our office address
+Duration 90 min
+Buffer 10 minutes
+No price
+No notes
+Let customers manage their appointment
+
+
+
+Home Page do See This App no Bookings:
+
+https://outlook.office365.com/owa/calendar/SeeThisAppRoomBooking@seethisapp.onmicrosoft.com/bookings/
+
+API DOCUMENTATION:
+https://docs.microsoft.com/pt-br/graph/api/resources/booking-api-overview?view=graph-rest-1.0
+
+API TOKENS DOCUMENTATION
+https://docs.microsoft.com/pt-br/graph/auth/auth-concepts#access-tokens
+
+AUTHORIZATION
+
+
+Display name : See This App
+Application (client) ID : 75594e15-0e87-4dd0-b59e-08a6b77654ce
+Object ID : c33ab9e5-e69a-46a5-bbfe-879383d1aa52
+Directory (tenant) ID : fa453bd6-98a2-45ad-bcbb-c4fdb33edacc
+Supported account types : My organization only
+
+redirect URI (Expected_Redirect) : https://assistant.demo.sophie.chat/Luis
+redirect URI (Expected_Redirect) : http://127.0.0.1/redirect
+redirect URI (Expected_Redirect) : https://localhost/
+
+Client Secrets:
+===============
+Description : Integration Dev
+Expires : 8/21/2022
+Value : xT67Q~pzeV4FZyvWIwxX-JooVV8Pev8TH9yN3
+Secret ID : edc4155c-4255-4518-8610-1afec18cb478
+
+Scopes : https://graph.microsoft.com/Bookings.Manage.All Bookings.Read.All Bookings.ReadWrite.All BookingsAppointment.ReadWrite.All offline_access openid profile User.Read 
+
+Application ID URI:
+https://www.seethisapp.onmicrosoft.com/seethisapp-roombooking/api
+
+Scope name: bookingAppointment.All
+
+Appication ID URI + Scope : https://www.seethisapp.onmicrosoft.com/seethisapp-roombooking/api/bookingAppointment.All
+
+
+https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=75594e15-0e87-4dd0-b59e-08a6b77654ce&response_type=code&scope=bookingAppointment.All
+
+
+Microsoft Documentation Path:
+1. https://docs.microsoft.com/en-us/graph/api/resources/booking-api-overview?view=graph-rest-1.0
+2. https://docs.microsoft.com/en-us/graph/auth/auth-concepts#access-tokens
+3. https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-app-call-api-overview
+4. https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-app-call-api-app-registration
+5. (!) https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app
+

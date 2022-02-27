@@ -1,0 +1,95 @@
+TASK ROOM BOOKING USING SOPHIE
+
+Documentation:
+1. Manage resource mailboxes in Exchange Online
+https://docs.microsoft.com/en-US/exchange/recipients-in-exchange-online/manage-resource-mailboxes?WT.mc_id=365AdminCSH_inproduct
+
+Site:
+https://admin.microsoft.com/Adminportal/Home?source=applauncher#/homepage
+https://admin.exchange.microsoft.com/#/resources
+Admin:
+luis.martins@seethisapp.onmicrosoft.com
+jent123!@#$
+
+Rooms & equipment:
+==================
+
+Room 1 : room1@seethisapp.onmicrosoft.com
+Password : Gor36801
+Room 2 : room2@seethisapp.onmicrosoft.com
+Password : Tak93289
+Room 3 : room3@seethisapp.onmicrosoft.com
+Password : Luy38394
+V Allow repeating meetings
+V Allow scheduling only during work hours
+V Automatically decline meetings outside of limits
+
+Booking window (days) - 180
+Max Booking duration (hours) - 24
+
+V Auto accept meeting requests
+
+
+
+API DOCUMENTATION:
+https://docs.microsoft.com/pt-br/graph/api/resources/booking-api-overview?view=graph-rest-1.0
+
+API TOKENS DOCUMENTATION
+https://docs.microsoft.com/pt-br/graph/auth/auth-concepts#access-tokens
+
+AUTHORIZATION
+
+
+Display name : Assistant.chat/Luis
+Application (client) ID : 5cf3fb1a-8543-45f9-a210-bdf3879f243c
+Object ID : 42dbb127-314b-4909-b834-b521e2e88feb
+Directory (tenant) ID : fa453bd6-98a2-45ad-bcbb-c4fdb33edacc
+Supported account types : All Microsoft account users
+
+Object ID : 22809568-babc-41be-82e6-08619ed80042
+
+redirect URI (Expected_Redirect) : https://assistant.demo.sophie.chat/Luis
+
+Client Secrets:
+===============
+Description : Application Password
+Expires : 2/22/2023
+Value : xC47Q~o3CiovBddMOzTnEThzSLQruJor~vc2I
+Secret ID : 70d8f46a-1257-42f5-ae75-418b8ffbf61e
+
+
+
+Scopes : 
+https://graph.microsoft.com/Calendars.ReadWrite.Shared
+https://graph.microsoft.com/User.Read
+
+CALENDAR APIs:
+==============
+
+1. Get free/busy schedule of users and resources
+The getSchedule action lets you get the availability information of one or more entities - users, distribution lists, or resources - for a specific period of time.
+
+https://graph.microsoft.com/v1.0
+
+POST /me/calendar/getSchedule 
+POST /users/{id|userPrincipalName}/calendar/getSchedule
+
+DOCUMENTATION : https://docs.microsoft.com/en-us/graph/api/calendar-getschedule?view=graph-rest-1.0&tabs=http
+
+
+2. user: findMeetingTimes
+Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.
+
+https://graph.microsoft.com/v1.0
+
+POST /me/findMeetingTimes
+POST /users/{id|userPrincipalName}/findMeetingTimes
+
+DOCUMENTATION : 
+1) https://docs.microsoft.com/en-us/graph/api/user-findmeetingtimes?view=graph-rest-1.0&tabs=http
+
+2) https://docs.microsoft.com/en-us/graph/findmeetingtimes-example
+
+
+
+
