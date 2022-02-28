@@ -1,0 +1,24 @@
+{"room": [
+    {
+        "room 1": {
+            "email": "room1@seethisapp.onmicrosoft.com",
+            "name": "Room 1"
+        }
+
+    },
+    {
+        "room 2": {
+            "email": "room2@seethisapp.onmicrosoft.com",
+            "name": "Room 2"
+        }
+
+    },
+    {
+        "room 3": {
+            "email": "room3@seethisapp.onmicrosoft.com",
+            "name": "Room 3"
+        }
+
+    }
+]
+}
