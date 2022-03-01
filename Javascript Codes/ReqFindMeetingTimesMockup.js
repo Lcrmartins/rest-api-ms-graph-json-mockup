@@ -51,16 +51,17 @@ const SlotFinder = (id, roomName, maxResultLength) => {
             if (response.Result.emptySuggestionsReason) {
                 return response.Result.emptySuggestionsReason;
             }
-            let suggestions = '';
-            let suggestion = '';
+            let suggestionName = '';
+            let suggestionValue = '';
             for (let i = 0; i < Math.min(response.Result.meetingTimeSuggestions.length, maxResultLength) ; i++) {
-                let date = response.Result.meetingTimeSuggestions[i].meetingTimeSlot.start.dateTime.substring(0, 9);
-                let from = response.Result.meetingTimeSuggestions[i].meetingTimeSlot.start.dateTime.substring(11, 15);
-                let to = response.Result.meetingTimeSuggestions[i].meetingTimeSlot.end.dateTime.substring(11, 15);
-                suggestion = `[c:link label=Suggestion ${i} for ${roomName}: ${date} from ${from} to ${to} value= Meeting Suggestion]`;   
-                suggestions += suggestion;
+                let date = response.Result.meetingTimeSuggestions[i].meetingTimeSlot.start.dateTime.substring(0, 10);
+                let from = response.Result.meetingTimeSuggestions[i].meetingTimeSlot.start.dateTime.substring(11, 16);
+                let to = response.Result.meetingTimeSuggestions[i].meetingTimeSlot.end.dateTime.substring(11, 16);
+                suggestionName = `Suggestion ${i+1} for ${roomName}`;
+                suggestionValue = `${date} from ${from} to ${to}`;
+                context.UpdateInputVariable(suggestionName, suggestionValue);   
             }
-            return suggestions;
+            return 'Ok. Done...';
         }
         return false;
     } catch(err) {
