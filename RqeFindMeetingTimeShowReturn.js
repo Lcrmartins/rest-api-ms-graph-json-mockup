@@ -4,7 +4,7 @@ const DateTimeMaker = (date, time) => {
 
 // Obtaining the empty slots ...
 
-const SlotFinder = (id, roomName, maxResultLength, context) => {
+const SlotFinder = (id, roomName, maxResultLength) => {
 
 /* Code to show the data commented...
     const findMeetingTimesUrl = `https://graph.microsoft.com/users/${idOrUserPrincipalName}/findMeetingTimes`;
@@ -51,18 +51,14 @@ const SlotFinder = (id, roomName, maxResultLength, context) => {
             if (response.Result.emptySuggestionsReason) {
                 return response.Result.emptySuggestionsReason+'[c:newline]Please, modify your query and try again.';
             }
-            let suggestionName = '';
-            let suggestionValue = '';
-            suggestions='';
+            let suggestions = '';
+            let suggestion = '';
             for (let i = 0; i < Math.min(response.Result.meetingTimeSuggestions.length, maxResultLength) ; i++) {
                 let date = response.Result.meetingTimeSuggestions[i].meetingTimeSlot.start.dateTime.substring(0, 10);
                 let from = response.Result.meetingTimeSuggestions[i].meetingTimeSlot.start.dateTime.substring(11, 16);
                 let to = response.Result.meetingTimeSuggestions[i].meetingTimeSlot.end.dateTime.substring(11, 16);
-                suggestionName = `Suggestion ${i+1} for ${roomName}`;
-                suggestionValue = `${date} from ${from} to ${to}`;
-                context.UpdateInputVariable(suggestionName, suggestionValue);
-                suggestion = `[c:link label=${suggestionName}: ${suggestionValue} value=chosen suggestion]`;   
-                suggestions += suggestion;   
+                suggestion = `[c:link label=Suggestion ${i} for ${roomName}: ${date} from ${from} to ${to} value= Meeting Suggestion]`;   
+                suggestions += suggestion;
             }
             return suggestions;
         }
@@ -76,11 +72,11 @@ const SlotFinder = (id, roomName, maxResultLength, context) => {
 
 function execute(context, proxy) {
     const roomOption = context.GetVariable('room_option');
-    const startDate = context.GetVariable('start_date');                // must be in (YYYY-MM-DD) format
-    const endDate = context.GetVariable('end_date');                    // must be in (YYYY-MM-DD) format
-    const startTime = context.GetVariable('start_time');                // must be in (HH:MM:SS) format and in UTC
-    const endTime = context.GetVariable('end_time');                    // must be in (HH:MM:SS) format and in UTC
-    const durationCode = 'PT'+context.GetVariable('booking_duration');  // must be in (hhHmmM) format (like 1H30M -> PT1H30M ou 45M -> PT45M )
+    const startDate = context.GetVariable('start_date');            // must be in (YYYY-MM-DD) format
+    const endDate = context.GetVariable('end_date');                // must be in (YYYY-MM-DD) format
+    const startTime = context.GetVariable('start_time');            // must be in (HH:MM:SS) format and in UTC
+    const endTime = context.GetVariable('end_time');                // must be in (HH:MM:SS) format and in UTC
+    const durationCode = 'PT'+context.GetVariable('booking_duration');      // must be in (hhHmmM) format (like 1H30M -> PT1H30M ou 45M -> PT45M )
     const room = [
         {
                 "email": "room1@seethisapp.onmicrosoft.com",
@@ -119,38 +115,33 @@ function execute(context, proxy) {
             id = 1; // for mockup
             roomName = room[0].name;
             roomEmail = room[0].email;
-            return SlotFinder(id, roomName, maxResultLength, context);
+            return SlotFinder(id, roomName, maxResultLength);
         }
         case "Room 2": {
             id = 2; // for mockup
             roomName = room[1].name;
             roomEmail = room[1].email;
-            return SlotFinder(id, roomName, maxResultLength, context);
+            return SlotFinder(id, roomName, maxResultLength);
         }
         case "Room 3": {
             id = 3; // for mockup
             roomName = room[2].name;
             roomEmail = room[2].email;
-            return SlotFinder(id, roomName, maxResultLength, context);
+            return SlotFinder(id, roomName, maxResultLength);
         }
         case "No Preference": {
-            
+            id = 4; // for mockup
+            maxResultLength = 2;
             var suggestions='';
             var suggestion='';
-            maxResultLength = 2;
-            for (let i = 0; i < 3; i++){   // included here 3 as a number of rooms in the data base.
-            id=i+1;
-            roomName = room[i].name;
-            roomEmail = room[i].email;
-            suggestion = SlotFinder(id, roomName, maxResultLength, context);
-            suggestions+=suggestion;
+            for (let i = 0; i < room.length; i++){
+                roomName = room[i].name;
+                roomEmail = room[i].email;
+                suggestion = SlotFinder(id, roomName, maxResultLength);
+                suggestions+=suggestion;
             }
-            return suggestions;            
+            return suggestions;
         }
-        default: {
-            id = 4; // for mockup
-            suggestion = SlotFinder(id, '', 5, context);
-            return suggestion;
-        }
+        default: return roomOption;
     }
 }

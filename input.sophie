@@ -1,0 +1,17 @@
+Choose one of the Suggestions:[c:newline]
+
+[c:link label=
+
+[s:getvar name=]
+
+
+
+
+
+[c:link label=Room 2]
+
+[c:link label=Room 3]
+
+[c:link label=No Preference]
+
+[c:link label=No slot test] uselast=false
